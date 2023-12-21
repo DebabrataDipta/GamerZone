@@ -222,6 +222,44 @@ nav{
     border-radius: 15px;
     margin-top: 10px;
 }
+
+/* footer part design */
+.footer-part{
+    background-color: black;
+    padding: 120px 250px;
+}
+.footer-title{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main-title{
+    color: white;
+}
+.footer-paragraph{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-evenly;
+    color: white;
+    padding: 40px 0;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.terms{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.60);
+}
+.footer-last{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    margin-top: 50px;
+}
 /* Responsive media queries starts here */
 /* Responsive nav bar design */
 /* for small devices */
@@ -254,6 +292,21 @@ nav{
     }
     .career-image img{
         width: 100%;
+    }
+    .footer-part{
+        padding: 20px 30px;
+    }
+    .terms{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .footer-links{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .footer-paragraph{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -290,5 +343,19 @@ nav{
     .career-image img{
         width: 100%;
     }
-    
+    .footer-part{
+        padding: 20px 30px;
+    }
+    .terms{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .footer-links{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .footer-paragraph{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
 }
