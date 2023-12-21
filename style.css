@@ -285,7 +285,7 @@ nav{
 /* Responsive nav bar design */
 /* for small devices */
 @media screen and (max-width: 576px){
-    nav, .nav-link ul,.second-banner,.game-portion,.career-part{
+    nav, .nav-link ul,.second-banner,.game-portion,.career-part,.game-reviews{
         flex-direction: column;
         gap: 20px;
     }
@@ -308,6 +308,22 @@ nav{
     .game-videos{
         padding: 20px 10px;
     }
+    .game-reviews{
+        padding: 20px 30px;
+    }
+    .game-images{
+        width: 100%;
+    }
+    .second-game-reviews{
+        flex-direction: column-reverse;
+        padding: 20px 30px;
+        gap: 20px;
+    }
+    .second-game-images img{
+        width:100%;
+    }
+
+
     .career-part{
         padding: 20px 30px;
     }
@@ -341,7 +357,7 @@ nav{
     }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    nav, .nav-link ul,.second-banner,.game-portion,.career-part{
+    nav, .nav-link ul,.second-banner,.game-portion,.career-part,.game-reviews{
         flex-direction: column;
         gap: 20px;
     }
@@ -367,6 +383,20 @@ nav{
     }
     .game-videos{
         padding: 30px 20px;
+    }
+    .game-reviews{
+        padding: 40px 70px;
+    }
+    .game-images{
+        width: 100%;
+    }
+    .second-game-reviews{
+        flex-direction: column-reverse;
+        padding: 40px 70px;
+        gap: 20px;
+    }
+    .second-game-images img{
+        width:100%;
     }
     .career-part{
         padding: 20px 30px;
