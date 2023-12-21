@@ -1,0 +1,294 @@
+/* shared style */
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.btn-primary{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/* shared style ends here */
+
+
+/* nav related style */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.nav-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-link ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+.dynamic_links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #0B02231A;
+    padding: 10px;
+}
+.icon{
+    align-items: center;
+}
+.nav-main-title{
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+.nav-colored-title{
+    color: #FF42A5;
+}
+.nav-link li, .dynamic_links{
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* banner style */
+.banner{
+    background-image: url('images/Group\ 14.png');
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner-title{
+    color: #0B0223;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;   
+}
+.banner-colored-title{
+    color: #F948B2;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.banner-paragraph{
+    margin-bottom: 15px;
+}
+.btn-secondary{
+    background: #4EC5F7;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+/* second banner style starts here */
+.second-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%); 
+    padding: 40px 50px;
+}
+.second-banner-image{
+    width: 80%;
+}
+.second-banner-title{
+    color: #F948B2;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.second-banner-description{
+    color: #534C64;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+}
+.purpose{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: right;
+}
+.second-banner-motivation{
+    color: #534C64;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+}
+/* online game videos design starts here */
+.game-videos{
+    padding: 70px 60px;
+}
+.game-videos-title{
+    color: #0B0223;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.game-videos-description{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.game-portion img{
+    width: 100%;
+}
+.game-portion{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.game-content h1{
+    color: #0B0223;
+    font-size: 35px;
+    font-weight: 800;
+}
+.game-content p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 50px 0;
+}
+/* reviews part 1 design */
+.game-reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    padding: 50px 150px;
+}
+.game-images img{
+    width: 70%;
+}
+.second-game-reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 400px;
+    padding: 50px 150px;
+}
+.second-game-images img{
+    width: 150%;
+}
+/* careers section design starts here */
+.career-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 150px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.career-image img{
+    width: 150%;
+}
+.career-part-title{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+.career-part-description{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.career-information{
+    display: flex;
+    gap: 100px;
+    color: white;
+    margin: 50px 0;
+}
+.btn-fourth{
+    background: #FFFF;
+    color: #FF42A5;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+/* Responsive media queries starts here */
+/* Responsive nav bar design */
+/* for small devices */
+@media screen and (max-width: 576px){
+    nav, .nav-link ul,.second-banner,.game-portion,.career-part{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-image img,.second-banner-image img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .second-banner{
+        padding: 15px 30px;
+    }
+    .second-banner-content,.purpose,.second-banner-motivation{
+        text-align: center;
+    }
+    .second-banner-description{
+        text-align: justify;
+    }
+    .game-videos{
+        padding: 20px 10px;
+    }
+    .career-part{
+        padding: 20px 30px;
+    }
+    .career-image img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav, .nav-link ul,.second-banner,.game-portion,.career-part{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-image img,.second-banner-image img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .second-banner{
+        padding: 30px 45px;
+    }
+    .second-banner-content,.purpose,.second-banner-motivation{
+        text-align: center;
+    }
+    .second-banner-description{
+        text-align: justify;
+    }
+    .game-portion{
+        justify-content: center;
+        align-items: center;
+    }
+    .game-videos{
+        padding: 30px 20px;
+    }
+    .career-part{
+        padding: 20px 30px;
+    }
+    .career-image img{
+        width: 100%;
+    }
+    
+}
